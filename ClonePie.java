@@ -1,15 +1,3 @@
-///Assignment: Find the best pie and clone it
-///< 5.3, 10.0, 2.0, 8.5 >
-///These are doubles and floats
-///Set the original value to the first element in the array
-///Starting from left to right, go through (compare) every number to see which one is larger if the next number is larger, and update the largest when a number is bigger than another.
-///After you find the best pie, add it to the end of the array
-///< 5.3, 10.0, 2.0, 8.5, 10.0 >
-///Make the 2 best pies (10.0) evenly spread out (BONUS)
-
-
-
-
 import java.util.ArrayList;
 
 public class ClonePie {
@@ -34,6 +22,14 @@ public class ClonePie {
     // inserting a copy of the yummiest pie at the end of the list 
     static double cloneYummiestPie(ArrayList<Pie> pies) {
         // write your pseudocode here!
+        ///Assignment: Find the best pie and clone it
+///< 5.3, 10.0, 2.0, 8.5 >
+///These are doubles and floats
+///Set the original value to the first element in the array
+///Starting from left to right, go through (compare) every number to see which one is larger if the next number is larger, and update the largest when a number is bigger than another.
+///After you find the best pie, add it to the end of the array
+///< 5.3, 10.0, 2.0, 8.5, 10.0 >
+///Make the 2 best pies (10.0) evenly spread out (BONUS)
             Pie maxPie = pies.get(0); 
             for (int i = 1; i < pies.size(); i++) {
                 if (pies.get(i).yumminess > maxPie.yumminess) {
